@@ -29,11 +29,16 @@ def speak(text):
 
 #memastikan nama file adalah main.py
 if __name__ == "__main__":
-     with open("ascii.txt", "r") as f:
-          text = f.read()
-          #print text dari file dan ubah menjadi warna biru
-          print(BLUE + text + RESET)
-          print("[1] Chat AI", "[2] AI File Reader", "[3] Exit", sep=" " * 10)
+     text = r"""
+     _________ __            .___.__   _____          __          
+     /   _____//  |_ __ __  __| _/|__| /     \ _____ _/  |_  ____  
+     \_____  \\   __\  |  \/ __ | |  |/  \ /  \\__  \\   __\/ __ \ 
+     /        \|  | |  |  / /_/ | |  /    Y    \/ __ \|  | \  ___/ 
+    /_______  /|__| |____/\____ | |__\____|__  (____  /__|  \___ >
+          \/                 \/            \/     \/          \/ 
+     """
+     print(BLUE + text + RESET)
+     print("[1] Chat AI", "[2] AI File Reader", "[3] Exit", sep=" " * 10)
      
 
      while True:
